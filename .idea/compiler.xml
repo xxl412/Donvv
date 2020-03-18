@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="clouddemo" />
+        <module name="logintest" />
+        <module name="officeespace" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="clouddemo" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="logintest" target="1.8" />
+      <module name="officeespace" target="1.8" />
+      <module name="officespace" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="clouddemo" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="logintest" options="-parameters" />
+      <module name="officeespace" options="-parameters" />
+      <module name="officespace" options="-parameters" />
+    </option>
+  </component>
+</project>
