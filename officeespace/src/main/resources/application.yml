@@ -1,0 +1,41 @@
+server:
+  port: 8088
+
+spring:
+  datasource:
+    druid:
+      url: 39.106.154.201:3306
+      username: root
+      password: Donvv20200109!
+      driverClassName: com.mysql.jdbc.Driver
+      initialSize: 5
+      minIdle: 5
+      maxActive: 20
+      maxWait: 10000
+      testOnBorrow: true
+      testOnReturn: false
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 5000 #\u8FDE\u63A5\u8D85\u65F6 \u6BEB\u79D2
+    jedis:
+      pool:
+        maxActive: 3
+        maxIdle: 3
+        minIdle: 1
+        maxWait: -1 #\u8FDE\u63A5\u6C60\u6700\u5927\u7B49\u884C\u65F6\u95F4 -1\u6CA1\u6709\u9650\u5236
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    publisher-confirms: true
+    virtual-host: /
+  elasticsearch:
+    jest:
+      proxy:
+        host: 127.0.0.1:9200
+        port: 9200
+        index: ooo
